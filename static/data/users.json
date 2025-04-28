@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Admin",
+    "email": "asotits@gmail.com",
+    "passwordHash": "$2b$10$GkqnKcqTmm0ya8XapDHRzeIwze2DDfyTY9Yb186ALOcLC3xH7DjqG",
+    "id": 1745771686012,
+    "budget": 1e+22,
+    "inventory": {
+      "food": 42,
+      "toy": 22,
+      "treat": 30
+    },
+    "isAdmin": true
+  },
+  {
+    "name": "tia",
+    "email": "tia.shaddad668@gmail.com",
+    "passwordHash": "$2b$10$zTP0y9z2AFP29UWoXeR2vOyxAL5sIyNF62qw2xyomesLk4cI65xc.",
+    "id": 1745771918130,
+    "budget": 6999045,
+    "inventory": {
+      "food": 13,
+      "toy": 20,
+      "treat": 32
+    },
+    "isAdmin": false,
+    "pets": [
+      1745771993508,
+      1745771980162,
+      1745771993508
+    ]
+  },
+  {
+    "name": "dman",
+    "email": "demosthenous18@gmail.com",
+    "passwordHash": "$2b$10$ecKnowhEmbpkxse4PcFW6efGHYQ9HhoN8FI9acvyXwuWVxLWjjQWe",
+    "id": 1745772367266,
+    "budget": 69999999999515,
+    "inventory": {
+      "food": 3,
+      "toy": 6,
+      "treat": 16
+    },
+    "isAdmin": false,
+    "pets": [
+      1745772012649,
+      1745772530592,
+      1745772553938
+    ]
+  }
+]

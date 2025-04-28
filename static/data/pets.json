@@ -1,0 +1,172 @@
+[
+  {
+    "id": 1,
+    "type": "puppy",
+    "name": "Buddy",
+    "image": "/images/puppy1.jpg",
+    "adoptedBy": null,
+    "hunger": 4,
+    "happiness": 95,
+    "owner": 1745689813952
+  },
+  {
+    "id": 2,
+    "type": "kitten",
+    "name": "Misty",
+    "image": "/images/kitten1.jpg",
+    "adoptedBy": null,
+    "hunger": 7,
+    "happiness": 94,
+    "owner": 1745602462299
+  },
+  {
+    "id": 3,
+    "type": "puppy",
+    "name": "Mocha",
+    "image": "/images/puppy2.jpg",
+    "adoptedBy": null,
+    "hunger": 7,
+    "happiness": 74,
+    "owner": 1745689813952
+  },
+  {
+    "id": 4,
+    "type": "kitten",
+    "name": "Pumpkin",
+    "image": "/images/kitten2.jpg",
+    "adoptedBy": null,
+    "hunger": 0,
+    "happiness": 100,
+    "owner": 1745751016845
+  },
+  {
+    "id": 5,
+    "type": "puppy",
+    "name": "Nina",
+    "image": "/images/puppy3.jpg",
+    "adoptedBy": null,
+    "hunger": 3,
+    "happiness": 100,
+    "owner": 1745751016845
+  },
+  {
+    "id": 6,
+    "type": "kitten",
+    "name": "Zeus",
+    "image": "/images/kitten3.jpg",
+    "adoptedBy": null,
+    "hunger": 12,
+    "happiness": 100,
+    "owner": 1745689813952
+  },
+  {
+    "id": 7,
+    "type": "puppy",
+    "name": "Chloe",
+    "image": "/images/puppy4.jpg",
+    "adoptedBy": null,
+    "hunger": 33,
+    "happiness": 88,
+    "owner": 1745689813952
+  },
+  {
+    "id": 8,
+    "type": "kitten",
+    "name": "Misty",
+    "image": "/images/kitten4.jpg",
+    "adoptedBy": null,
+    "hunger": 0,
+    "happiness": 90,
+    "owner": 1745689813952
+  },
+  {
+    "id": 1745771980162,
+    "name": "Irene",
+    "type": "puppy",
+    "hunger": 0,
+    "happiness": 100,
+    "adoptionStatus": false,
+    "owner": 1745771918130
+  },
+  {
+    "id": 1745771985508,
+    "name": "Tia",
+    "type": "puppy",
+    "hunger": 50,
+    "happiness": 50,
+    "adoptionStatus": false,
+    "owner": null
+  },
+  {
+    "id": 1745771993508,
+    "name": "Bee",
+    "type": "kitten",
+    "hunger": 0,
+    "happiness": 100,
+    "adoptionStatus": false,
+    "owner": 1745771918130
+  },
+  {
+    "id": 1745772012649,
+    "name": "Mahmood Bilal",
+    "type": "puppy",
+    "hunger": 0,
+    "happiness": 100,
+    "adoptionStatus": false,
+    "owner": 1745772367266
+  },
+  {
+    "id": 1745772530592,
+    "name": "Dimetris",
+    "type": "kitten",
+    "hunger": 0,
+    "happiness": 100,
+    "adoptionStatus": false,
+    "owner": 1745772367266
+  },
+  {
+    "id": 1745772553938,
+    "name": "Kolos",
+    "type": "puppy",
+    "hunger": 0,
+    "happiness": 100,
+    "adoptionStatus": false,
+    "owner": 1745772367266
+  },
+  {
+    "id": 1745865022498,
+    "name": "Lili",
+    "type": "puppy",
+    "hunger": 50,
+    "happiness": 50,
+    "adoptionStatus": false,
+    "owner": null
+  },
+  {
+    "id": 1745865026692,
+    "name": "Coco",
+    "type": "puppy",
+    "hunger": 50,
+    "happiness": 50,
+    "adoptionStatus": false,
+    "owner": null
+  },
+  {
+    "id": 1745865035233,
+    "name": "Kika",
+    "type": "kitten",
+    "hunger": 50,
+    "happiness": 50,
+    "adoptionStatus": false,
+    "owner": null
+  },
+  {
+    "id": 1745865057255,
+    "name": "Max",
+    "type": "puppy",
+    "hunger": 50,
+    "happiness": 50,
+    "adoptionStatus": false,
+    "owner": null
+  }
+]
