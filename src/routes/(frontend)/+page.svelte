@@ -2,60 +2,89 @@
 	import { currentUser } from '$lib/stores';
 
 	$: user = $currentUser;
-	const prices = { food: 10, toy: 15, treat: 5 };
-	let message = '';
-
-	async function buy(item: 'food' | 'toy' | 'treat') {
-		if (!user) {
-			message = 'Please log in to buy items.';
-			return;
-		}
-
-		const res = await fetch('/api/shop', {
-			method: 'POST',
-			body: JSON.stringify({
-				userId: user.id,
-				item,
-				cost: prices[item]
-			}),
-			headers: {
-				'Content-Type': 'application/json'
-			}
-		});
-
-		if (res.ok) {
-			message = `Successfully purchased ${item}`;
-			user.budget -= prices[item];
-			user.inventory[item] = (user.inventory[item] || 0) + 1;
-		} else {
-			message = await res.text();
-		}
-	}
 </script>
 
-<h1>Pet Shop</h1>
+<div class="background">
+	<div class="container">
+		<div class="box">
+			<h1>🐾 Welcome to My Pet Shop</h1>
 
-{#if user}
-	<p>Your Budget: ${user.budget}</p>
-	<p>Inventory:</p>
-	<ul>
-		<li>Food: {user.inventory.food}</li>
-		<li>Toy: {user.inventory.toy}</li>
-		<li>Treat: {user.inventory.treat}</li>
-	</ul>
-	<button on:click={() => buy('food')}>Buy Food (${prices.food})</button>
-	<button on:click={() => buy('toy')}>Buy Toy (${prices.toy})</button>
-	<button on:click={() => buy('treat')}>Buy Treat (${prices.treat})</button>
-{:else}
-	<p>Please log in to purchase items.</p>
-{/if}
+			{#if user}
+				<p>Welcome!</p>
 
-<p>{message}</p>
+				<div class="buttons">
+					<a class="button" href="/pets">Adopt a Pet</a>
+					<a class="button" href="/shop">Visit the Shop</a>
+				</div>
+			{:else}
+				<p>Please <a class="login-link" href="/login">log in</a> to adopt a pet or visit the shop.</p>
+			{/if}
+		</div>
+	</div>
+</div>
 
 <style>
-	button {
-		padding: 0.5rem;
-		font-size: 1rem;
-		margin-right: 0.5rem;
+	.background {
+		background: linear-gradient(135deg, #6fb1fc, #4364f7);
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		padding: 2rem;
+	}
+
+	.box {
+		background: #ffffff;
+		border-radius: 16px;
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+		padding: 3rem 2rem;
+		text-align: center;
+		max-width: 500px;
+		width: 100%;
+	}
+
+	h1 {
+		color: #2a52be;
+		margin-bottom: 1rem;
+		font-size: 2.5rem;
+	}
+
+	p {
+		color: #555;
+		margin-bottom: 2rem;
+		font-size: 1.2rem;
+	}
+
+	.buttons {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	.button {
+		background-color: #2a52be;
+		color: white;
+		padding: 0.75rem 1.5rem;
+		text-decoration: none;
+		font-size: 1.1rem;
+		border-radius: 10px;
+		transition: background 0.3s ease;
+	}
+
+	.button:hover {
+		background-color: #1e3d8f;
+	}
+
+	.login-link {
+		color: #2a52be;
+		font-weight: bold;
+		text-decoration: underline;
 	}
 </style>
